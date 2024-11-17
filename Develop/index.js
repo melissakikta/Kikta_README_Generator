@@ -93,12 +93,12 @@ function generateREADME(response) {
     ${response.description}
 
     ## Tables of Contents
-      * [Installation] (#introduction)
-      * [Usage] (#usage)
-      * [License] (#license)
-      * [Contributing] (#contributing)
-      * [Tests] (#tests)
-      * [Questions] (#questions)
+      * [Installation](#introduction)
+      * [Usage](#usage)
+      * [License](#license)
+      * [Contributing](#contributing)
+      * [Tests](#tests)
+      * [Questions](#questions)
 
     ## Installation
     ${response.installation}
@@ -118,7 +118,7 @@ function generateREADME(response) {
     ## Questions
     GitHub: [${response.github}] (https://github.com/${response.github})
       
-    If you have additional questions about the application, please reach my by email at: [${response.email}] (mailto:${response.email})
+    If you have additional questions about the application, please reach my by email at: [${response.email}] (mailto: ${response.email})
     `
   };
 
