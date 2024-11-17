@@ -70,7 +70,7 @@ const licenseNotice =
     licenseNotice = licenseInfo.GPLv2;
   } else if (response.license === 'GPLv3') {
     licenseNotice = licenseInfo.GPLv3;
-  } else if (response.license === 'Apache 2.0') {
+  } else if (response.license === 'Apache 2.0') { //Apache 2.0 vs Apache20 in const badge?
     licenseNotice = licenseInfo.Apache20;
   } else if (response.license === 'BSD 3-Clause') {
     licenseNotice = licenseInfo.BSD3Clause;
