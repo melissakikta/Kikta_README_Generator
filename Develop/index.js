@@ -84,8 +84,9 @@ const licenseNotice =
     licenseNotice = licenseInfo.Unlicense;
   } 
 
-//layout of the README page
-  const data = `# ${response.title} 
+//Function to generate README content
+function generateREADME(response) {
+  return `# ${response.title} 
     ${licenseBadge}
 
     ## Description 
@@ -119,15 +120,22 @@ const licenseNotice =
       
     If you have additional questions about the application, please reach my by email at: [${response.email}] (mailto:${response.email})
     `
+  };
 
 
 // TODO: Create a function to write README file
+//Function to write README file
 function writeToFile(fileName, data) {
-
+  fs.writeFile(fileName, data, (err) => {
+    if (err) {
+      console.error('Error writing file:', err);
+    } else {
+      console.log(`Successfully wrote to ${fileName}`);
+    }
+  });
 }
 
-// TODO: Create a function to initialize app
-//24_Basic_Inquirer
+// TODO: Create a function to initialize app (24_Basic_Inquirer)
 function init() {
   inquirer
   .prompt([
@@ -188,10 +196,16 @@ function init() {
 
   ])
 
-  .then((response) => {
-    const filename = `${response.title.toLowerCase().split(' ').join('')}.md`;
-  };
-};
+  .then((answers) => {
+    const readmeContent = generateREADME(answers); 
+    writeToFile(`${response.title.toLowerCase().split(' ').join('')}.md`, readmeContent);
+    console.log(`I created a README with the title ${response.title.toLowerCase().split(' ').join('')}.md`);
+  })
+  .catch((error) => {
+    console.error('Error with Inquirer prompts:', error);
+  });
+  }
+
 
 // Function call to initialize app
 init();
