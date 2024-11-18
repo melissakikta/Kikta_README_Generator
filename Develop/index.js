@@ -4,7 +4,7 @@ import fs from 'fs';
 
 // TODO: Create an array of questions for user input
 
-const questions = [];
+//const questions = [];
 
 //constant for license badges (fix links)
 const badgeImage = {
@@ -20,7 +20,7 @@ const badgeImage = {
   };
 
 //constant for license badge selection
-let licenseBadge  
+let licenseBadge = 
   if (response.license === 'MIT') {
     licenseBadge = badgeImage.MIT;
   } else if (response.license === 'GPLv2') {
@@ -39,7 +39,7 @@ let licenseBadge
     licenseBadge = badgeImage.CCO;
   } else {
     licenseBadge = badgeImage.Unlicense;
-  }; 
+  }]; 
       
 //constant to house license information
 let licenseInfo = {
@@ -63,7 +63,7 @@ let licenseInfo = {
 }
 
 //constant for license notice selection
-const licenseNotice = 
+let licenseNotice 
   if (response.license === 'MIT') {
     licenseNotice = licenseInfo.MIT;
   } else if (response.license === 'GPLv2') {
@@ -135,7 +135,7 @@ function writeToFile(fileName, data) {
   });
 }
 
-// TODO: Create a function to initialize app (24_Basic_Inquirer)
+// TODO: Create a function to initialize app 
 function init() {
   inquirer
   .prompt([
