@@ -4,7 +4,7 @@ A command-line application to quickly and easily create a README file, which wil
 ## 📚 Description
 This application is designed to quickly and easily create a README file from a series of prompts in the command-line. Creating a thorough README is nessecary for communicating the benefits of the application. It is also a time consuming process to format the information in a professional manner. This application acts a template that will create the README in the professional manner desired in less time and energy.
 
-A video tutorial canbe found [here](videolink)
+A video tutorial canbe found [here](https://drive.google.com/file/d/1VYYYCFIlldMwhfwWw4gv_wHdUftWJcuP/view?usp=sharing)
 
 ## 🚀 Table of Contents
   * [Usage](#📝-Usage)
