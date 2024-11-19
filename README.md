@@ -4,6 +4,8 @@ A command-line application to quickly and easily create a README file, which wil
 ## 📚 Description
 This application is designed to quickly and easily create a README file from a series of prompts in the command-line. Creating a thorough README is nessecary for communicating the benefits of the application. It is also a time consuming process to format the information in a professional manner. This application acts a template that will create the README in the professional manner desired in less time and energy.
 
+A video tutorial canbe found [here](videolink)
+
 ## 🚀 Table of Contents
   * [Usage](#📝-Usage)
   * [Installations](#🛠-installation)
@@ -14,16 +16,20 @@ This application is designed to quickly and easily create a README file from a s
 
 ## 📝 Usage
 <strong>JS Applications</strong>
-This program is designed to be used as a JS Application. 
 
-Initial Code Prompts
-![Code Prompts](.assets/images/name.jpg)
+This program is designed to be used as a JS Application. Below you will see the codeto create the prompts for a user's information, how those prompts appear in the terminal, and the generated README from the responses.
 
-Prompts in the Console
-![Console with Prompts](.assets/images/name.jpg)
+<u>Initial Code Prompts:</u>
 
-Generated README File
-![Generated README File](.assets/images/name.jpg)
+![Prompt Questions](./images/questions.jpg)
+
+<u>Prompts in the Console</u>
+
+![Console with Prompts](./images/console_prompts.jpg)
+
+<u>Generated README File</u>
+
+![Generated README File](./images/generated_README.jpg)
 
 Back to [Table-of-Contents](#🚀-table-of-contents)
 
